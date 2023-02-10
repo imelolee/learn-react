@@ -15,52 +15,13 @@ Hints:
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./style.css";
 import reportWebVitals from "./reportWebVitals";
+import App from "./App";
 
 const page = ReactDOM.createRoot(document.getElementById("root"));
 
-function MyHeader() {
-  return (
-    <header>
-      <nav className="nav">
-        <img src="./react-logo.png" className="nav-logo" />
-        <ul className="nav-items">
-          <li>Home</li>
-          <li>Docs</li>
-          <li>About</li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
-
-function MyContext() {
-  return (
-    <div>
-      <h1>Fun facts about React</h1>
-      <ul>
-        <li>Was first released in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 100K stars on GitHub</li>
-        <li>Is maintained by Facebook</li>
-        <li>Powers thousands of enterprise apps, including mobile apps</li>
-        <li>...</li>
-      </ul>
-    </div>
-  );
-}
-
-function Page() {
-  return (
-    <div>
-      <MyHeader />
-      <MyContext />
-    </div>
-  );
-}
-
-page.render(<Page />);
+page.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
